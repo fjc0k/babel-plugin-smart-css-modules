@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`babel [babelPluginSmartCssModules] custom exts 1`] = `
+"import css from './0.css';
+import less from \\"./2.less?modules\\";
+import scss from './1.scss';
+export default {
+  css,
+  less,
+  scss
+};"
+`;
+
+exports[`babel [babelPluginSmartCssModules] default 1`] = `
+"import css from \\"./0.css?modules\\";
+import less from \\"./2.less?modules\\";
+import scss from \\"./1.scss?modules\\";
+export default {
+  css,
+  less,
+  scss
+};"
+`;
+
+exports[`babel [useSmartCssModules] custom exts 1`] = `
+"import css from './0.css';
+import less from \\"./2.less?modules\\";
+import scss from './1.scss';
+export default {
+  css,
+  less,
+  scss
+};"
+`;
+
+exports[`babel [useSmartCssModules] default 1`] = `
+"import css from \\"./0.css?modules\\";
+import less from \\"./2.less?modules\\";
+import scss from \\"./1.scss?modules\\";
+export default {
+  css,
+  less,
+  scss
+};"
+`;
+
+exports[`babel custom flag 1`] = `
+"import css from \\"./0.css?MMM\\";
+import less from \\"./2.less?MMM\\";
+import scss from \\"./1.scss?MMM\\";
+export default {
+  css,
+  less,
+  scss
+};"
+`;
+
+exports[`babel set ignore 1`] = `
+"import css from \\"./0.css?modules\\";
+import less from './2.less';
+import scss from \\"./1.scss?modules\\";
+export default {
+  css,
+  less,
+  scss
+};"
+`;
